@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var marks = 50;
+
+        // var result = (marks < 40) ? "hadaram"
+        //     : (marks < 60) ? "Good try"
+        //         : (marks < 80) ? "very good"
+        //             : "WOW so nice";
+
+        // document.write(result);
+
+
+
+
+
+
+
+        // var num = alert(prompt(" num"));
+        // var check = (num >= 10) ? () => alert("number is big")
+        //     : () => alert("number is small");
+
+        // check();
+
+
+        let productName = "smart phone"
+        let productPrize = 15000;
+        let quantity = 2;
+        let vat = 10;
+
+        var calculateTotal = (price, qty) => {
+            let total = price * qty;
+
+            var addVat = (vateRate) => {
+                let vatAmount = (total * vateRate) / 100;
+                return total + vateRate;
+            }
+            return addVat(vat);
+        }
+
+        let finalAmount = calculateTotal(productPrize, quantity);
+        document.write("total amount :" + finalAmount);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

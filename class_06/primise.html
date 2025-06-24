@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+
+<body> -->
+    <!-- <script>
+        var a = parseInt(prompt("first number"));
+        var b = parseInt(prompt("second number"));
+        var c = parseInt(prompt("third number"));
+
+        if (a < b) {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+
+        if (a < c) {
+            temp = a;
+            a = c;
+            c = temp;
+        }
+
+        if (b < c) {
+            temp = b;
+            b = c;
+            c = temp;
+        }
+
+        document.write(a + " ," + b + " ," + c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promise Example</title>
+    </head>
+
+    <body>
+        <script>
+            function getSortedNumbers() {
+                return new Promise((resolve, reject) => {
+                    let a = parseInt(prompt("Enter first number:"));
+                    let b = parseInt(prompt("Enter second number:"));
+                    let c = parseInt(prompt("Enter third number:"));
+
+                    // ইনপুট যাচাই
+                    if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                        reject("Invalid input. Please enter only numbers.");
+                    } else {
+                        // Array এ দিয়ে sort করা
+                        let numbers = [a, b, c];
+                        numbers.sort((x, y) => y - x); // Descending order
+                        resolve(numbers);
+                    }
+                });
+            }
+
+            // Promise call + then-catch ব্যবহার
+            getSortedNumbers()
+                .then(sorted => {
+                    document.write("Sorted numbers (largest to smallest):<br>");
+                    document.write(sorted.join(" , "));
+                })
+                .catch(error => {
+                    document.write("Error: " + error);
+                });
+        </script>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
