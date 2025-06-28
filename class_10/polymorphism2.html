@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polymorphism Another Ex</title>
+  </head>
+  <body>
+    <h2>Select Payment Method</h2>
+    <div class="payment-container">
+      <form id="paymentForm">
+        <label>
+          <input
+            type="radio"
+            name="paymentMethod"
+            value="Cash"
+            onclick="showInputAmount()"
+          />Cash </label
+        ><br />
+        <label>
+          <input
+            type="radio"
+            name="paymentMethod"
+            value="creditCard"
+            onclick="showInputAmount()"
+          />Credit Card</label
+        ><br />
+        <label>
+          <input
+            type="radio"
+            name="paymentMethod"
+            value="Paypal"
+            onclick="showInputAmount()"
+          />PayPal </label
+        ><br />
+
+        <div id="amountDiv" class="amount-input">
+          <label>Enter Amount: </label>
+          <input
+            type="number"
+            name="amount"
+            id="amount"
+            placeholder="Enter Amount"
+          />
+          <button type="button" onclick="processPayment()">Submit</button>
+        </div>
+      </form>
+    </div>
+    <h3 id="output"></h3>
+    <script>
+      class Payment {
+        constructor(amount) {
+          this.amount = amount;
+        }
+        pay() {
+          return `Paid ${this.amount} using default method`;
+        }
+      }
+      class CashPayment extends Payment {
+        pay() {
+          return `Paid ${this.amount} in Cash`;
+        }
+      }
+      class CreditCardPayment extends Payment {
+        pay() {
+          return `Paid ${this.amount} in Credit Card`;
+        }
+      }
+      class Paypal extends Payment {
+        pay() {
+          return `Paid ${this.amount} in Paypal`;
+        }
+      }
+    </script>
+  </body>
+</html>

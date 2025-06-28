@@ -7,54 +7,11 @@
     <title>Organic</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .banner {
-            background-image: url(images/banner-1.jpg);
-            /* এখানে আপনার ছবির URL দিন */
-            background-size: cover;
-            background-position: center;
-            height: 700px;
-            position: relative;
-            color: black;
-        }
-
-        .banner-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .banner-text h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .banner-text p {
-            font-size: 1.5rem;
-        }
-
-        .btn-banner {
-            padding: 15px;
-            border-radius: 50px;
-        }
-
-        .Catagory-img {
-            border-radius: 50%;
-        }
-    </style>
 </head>
 
 <body>
@@ -109,70 +66,27 @@
                 </div>
             </nav>
     </header>
+    <!-- marquee part -->
+
+    <div class="marquee-container overflow-hidden shadow-sm">
+        <div class="marquee-content d-flex align-items-center">
+            <!-- <div class="marquee-item px-4 py-2 bg-primary text-white rounded-pill mx-2"></div> -->
+            <h1> Welcome to Our Organic Food World!</h1>
+        </div>
+    </div>
 
 
 
 
     <main>
-        <!-- <div class="accordion" id="accordionExample">
-
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-dark text-left" type="button" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Collapsible Group Item #1
-                        </button>
-                    </h2>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                        Some placeholder content for the first accordion panel. This panel is shown by default, thanks
-                        to the <code>.show</code> class.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-warning text-left collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Collapsible Group Item #2
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Some placeholder content for the second accordion panel. This panel is hidden by default.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0 ">
-                        <button class="btn btn-link btn-light text-left collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Collapsible Group Item #3
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        And lastly, the placeholder content for the third and final accordion panel. This panel is
-                        hidden by default.
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <!--banner section-->
-        <section class="banner">
+        <section class="banner ">
             <div class="banner-overlay">
-                <div class="banner-text">
-                    <h1>আমাদের <span style="color: darkgreen; font-size: larger;">ওয়েবসাইটে</span> স্বাগতম</h1>
-                    <p>সেরা জায়গার, সেরা খাবার</p>
+                <div class="banner-text p-4">
+                    <h1>আপনার স্বাস্থ্যকর... <br> জীবনের শুরু <span style="color: darkgreen; font-size: larger;">Organic</span>-এ!</h1>
+                    <p>আমাদের কাছে আপনি পাবেন ভেজালমুক্ত, <br> ১০০% প্রাকৃতিক এবং নিরাপদ খাদ্যপণ্য,<br> ভালো থাকুন, স্বাস্থ্যকর থাকুন!
+
+                    </p>
                     <button class="btn btn-success border btn-banner">Start Shopping</button>
                     <button class="btn btn-dark btn-banner">Join Now</button>
                 </div>
@@ -226,44 +140,293 @@
             </div>
             <div class="row">
                 <div class="col-3">
-                    <div class="card" style="width: 255px; ">
-                        <img style="height: 200px; width: 200px;" src="images/product-thumb-1.png"
-                            class="card-img-top ml-4" alt="...">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Whole Wheat Sandwich Bread</h5>
-                            <div class="text-center mt-3">
-                                <span class="text-warning fs-4">&#9733;</span>
-                                <span class="text-warning fs-4">&#9733;</span>
-                                <span class="text-warning fs-4">&#9733;</span>
-                                <span class="text-warning fs-4">&#9733;</span>
-                                <span class="text-secondary fs-4">&#9734;</span> (222)
-                            </div>
+                    <div class="card" style="max-width: 320px">
+                        <img src="images/best_p1.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Golden Harvest Chicken Meat Ball</h5>
 
-                            <p class="card-text"></p>
-                            <a href="#" class="btn btn-primary ">Add To Cart</a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">৳270</span>
+                                <div>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-secondary fs-4">&#9734;</span> (212)
+                                </div>
+                            </div>
                         </div>
+                        <div class="card-footer d-flex justify-content-between bg-light">
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="max-width: 320px">
+                        <img src="images/best_p2.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Radhuni Shadmishali Seasoning Mixed</h5>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">৳200</span>
+                                <div>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-secondary fs-4">&#9734;</span> (102)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light">
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="max-width: 320px">
+                        <img src="images/best_p3.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Maggi Healthy Corn With Chicken</h5>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">৳55</span>
+                                <div>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-secondary fs-4">&#9734;</span> (269)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light">
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="max-width: 320px">
+                        <img src="images/best_p4.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                ACI Aroma Chinigura Rice </h5>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">৳350</span>
+                                <div>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-secondary fs-4">&#9734;</span> (35)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light">
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="max-width: 320px">
+                        <img src="images/best_p5.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Marks Full Cream Milk Powder </h5>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">৳390</span>
+                                <div>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-secondary fs-4">&#9734;</span> (500+)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light">
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="max-width: 320px">
+                        <img src="images/best_p6.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                KaziFarms Kitchen Plain Paratha</h5>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">৳199</span>
+                                <div>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-secondary fs-4">&#9734;</span> (79)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light">
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="max-width: 320px">
+                        <img src="images/best_p7.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Nestle KitKat <br> Chocolate </h5>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">৳210</span>
+                                <div>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-secondary fs-4">&#9734;</span> (25)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light">
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="max-width: 320px">
+                        <img src="images/best_p8.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Mr. Noodles Korean Super Spicy</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">৳145</span>
+                                <div>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9733;</span>
+                                    <span class="text-warning fs-4">&#9734;</span>
+                                    <span class="text-secondary fs-4">&#9734;</span> (221)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light">
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- three image part -->
+
+                <div class="d-flex container mt-4 mb-4">
+                    <div>
+                        <div>
+                            <img class="three_img12" src="images/threeImg1.jpeg" alt="">
+                        </div>
+                        <div>
+                            <img class="three_img12" src="images/threeImg2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="three_img3" src="images/threeImg3.jpeg" alt="">
+                    </div>
+
+                </div>
+
+    </main>
+    <!-- Footer part -->
+
+    <footer class="modern-footer pt-5">
+        <div class="container footer-content">
+            <div class="row g-4 mb-5">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="footer-logo d-block mb-4">
+                        Organic<span class="text-primary">.</span>
+                    </a>
+                    <p class="text-muted mb-4">
+                        🌿 Pure Goodness for a Healthy Life
+                        We provide 100% natural and chemical-free organic food, helping ensure your family’s well-being
+                        and a balanced environment. <br>
+                    </p>
+                    <ul class="contact-info mb-4">
+                        <li>
+                            <i style="color: #006400;" class="fas fa-map-marker-alt"></i>
+                            <span>123 Mirpur-2,<br>Dhaka,Bangladesh</span>
+                        </li>
+                        <li>
+                            <i style="color: #006400;" class="fas fa-phone"></i>
+                            <span>+008 123-4567</span>
+                        </li>
+                        <li>
+                            <i style="color: #006400;" class="fas fa-envelope"></i>
+                            <span>Organic@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Latest Pruducts</a></li>
+                        <li><a href="#">Recent Pruducts</a></li>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Contact Details</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-12">
+                    <h3 class="footer-title">Stay Connected</h3>
+                    <p class="text-muted mb-4">Subscribe to our Website & page and stay updated with the latest news and
+                        insights.</p>
+                    <form class="mb-4">
+                        <div class="mb-3">
+                            <input type="email" class="form-control newsletter-input" placeholder="Your email address">
+                        </div>
+                        <button type="submit" class="btn btn-subscribe text-white w-100">Subscribe Now</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </main>
-
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row py-2">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 YourBrand. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p>Made with <i class="fas fa-heart text-danger"></i> by <a href="#">Saif Mahin</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
